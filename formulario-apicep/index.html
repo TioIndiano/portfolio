@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CEP API</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+    <body class="container" style="viewport-fit: 100vh; width: 75%; background-color: #dedede; font-family: Roboto, sans;" >
+        <section class="row mt-5 align-items-center">
+            <div class="col">
+                <img src="./assets/image1.svg" alt="Imagem" width="85%">
+            </div>
+            <div class="col">
+                <article class="card card-body">
+                    <h3>Preencha seu endereço</h3>
+                    <hr>
+
+                    <form action="">
+                        <label for="cep">CEP</label>
+                        <input id="cep" class="form-control mb-3" placeholder="Ex: 12345678">
+
+                        <label for="logradouro">Logradouro</label>
+                        <input id="logradouro" class="form-control mb-3" placeholder="Ex: Av. Marechal Hermes">
+
+                        <label for="numero">Número</label>
+                        <input id="numero" class="form-control mb-3" placeholder="Ex: 123">
+
+                        <label for="bairro">Bairro</label>
+                        <input id="bairro" class="form-control mb-3" placeholder="Ex: Alphaville">
+
+                        <label for="cidade">Cidade</label>
+                        <input id="cidade" class="form-control mb-3" placeholder="Ex: São Luís">
+
+                        <label for="uf">UF</label>
+                        <input id="uf" class="form-control mb-3" placeholder="Ex: RJ">
+
+                        <div class="d-grid">
+                            <button class="btn btn-primary" style="background-color: #6C63FF; border-color: violet;">Enviar</button>
+                        </div>
+                    </form>
+                </article>
+
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
