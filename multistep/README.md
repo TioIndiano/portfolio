@@ -17,20 +17,12 @@ Figma <br>
 etapas. Esse tipo de componente pode ser usado quando temos
 formulários muito longos ou processos complexos, afim de
 melhorar a usabilidade e experiencia de usuário. 
-Visite o projeto online 🔗 [DESSE LINK](https://iamsandralima.github.io/boraCodar-Desafio23/)
+Visite o projeto online 🔗 [DESSE LINK](https://multistep-form-beige.vercel.app)
 
-# 💻 Web Version
-<p align="center">
- <img width="70%" src= "https://github.com/iamsandralima/boraCodar-Desafio23/assets/107657763/fc550871-f7a8-41b4-916d-ae03084db12a"/></p>
-
-
-# 📱 Mobile Version
-<p align="center">
- <img width="25%" height="10%"  src= "https://github.com/iamsandralima/boraCodar-Desafio23/assets/107657763/72abdf0c-b698-47b0-b9cc-3c8c666603ce"/></p>
- 
 # ✏️ Aprendizados
 
 * Aprimoramento de inglês técnico;
 * Estilização da área de texto;
 * Design;
+* Uso de API's 
 
