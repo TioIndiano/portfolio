@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?			family=IBM+Plex+Sans:wght@400;700&family=Titillium+Web:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="./assets/icon.png">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="https://unpkg.com/@phosphor-icons/web"></script>
+	<title>Multi Steps Form</title>
+</head>
+
+<body>
+
+	<main id="app">
+		<form>
+			<div class="step-progress">
+				<strong class="active" data-step>Informações Pessoais</strong>
+				<i class="ph-bold ph-caret-right"></i>
+
+
+				<strong data-step>Endereço</strong>
+				<i class="ph-bold ph-caret-right"></i>
+
+
+				<strong data-step>Projeto</strong>
+
+
+			</div>
+
+
+			<div class="form-step active">
+				<div class="content">
+					<div class="input-wrapper">
+						<label for="name">Nome</label>
+						<input id="name" name="name" type="text" placeholder="Como prefere ser chamado" required />
+					</div>
+
+					<div class="input-wrapper">
+						<label for="phone">Telefone</label>
+						<input id="phone" name="phone" type="text" placeholder="Digite seu número de WhatsApp"
+							onkeypress="return /\d/.test(event.key)" />
+					</div>
+
+					<div class="input-wrapper">
+						<label for="email">E-mail</label>
+						<input id="email" name="email" type="email" placeholder="Digite seu e-mail" required />
+					</div>
+				</div>
+
+				<div class="button-wrapper justify-end">
+					<button type="button" class="btn primary" data-action="next">CONTINUAR</button>
+				</div>
+			</div>
+
+
+			<div class="form-step hide">
+				<div class="content">
+					<div class="input-wrapper">
+						<label for="cep">CEP</label>
+						<input id="cep" name="cep" type="text" placeholder="Qual é o seu CEP?" />
+					</div>
+
+					<div class="input-wrapper">
+						<label for="logradouro">Logradouro</label>
+						<input id="logradouro" name="logradouro" type="text"
+							placeholder="Ex: Av. Marechal Hermes" onkeypress="return /\d/.test(event.key)" />
+					</div>
+
+					<div class="input-wrapper">
+						<label for="bairro">Bairro</label>
+						<input id="bairro" name="bairro"
+							placeholder="Ex. Alphaville" />
+					</div>
+
+					<div class="input-wrapper">
+						<label for="cidade">Cidade</label>
+						<input id="cidade" name="cidade"
+							placeholder="Ex. Rio de Janeiro, Recife..." />
+					</div>
+
+					<div class="input-wrapper">
+						<label for="uf">UF</label>
+						<input id="uf" name="uf"
+							placeholder="Ex. Rio de Janeiro, Recife..." />
+					</div>
+				</div>
+
+				<div class="button-wrapper">
+					<button type="button" class="btn secondary" data-action="prev">VOLTAR</button>
+					<button type="button" class="btn primary" data-action="next">CONTINUAR</button>
+				</div>
+			</div>
+
+
+			<div class="form-step hide">
+				<div class="content">
+
+					<div class="input-wrapper">
+						<label for="project">Por que quer trabalhar conosco?</label>
+						<textarea id="project" name="project" placeholder="Descreva quais os objetivos de carreira" /></textarea>
+					</div>
+
+					<div class="input-wrapper">
+						<label for="project">Envie seu currículo</label>
+						<input type="file" id="project" name="project" placeholder="Descreva quais os objetivos desse projeto" multiple/>
+					</div>
+				</div>
+
+				<div class="button-wrapper">
+					<button type="button" class="btn secondary" data-action="prev">VOLTAR</button>
+					<button type="submit" class="btn primary">Enviar</button>
+				</div>
+
+			</div>
+		</form>
+	</main>
+
+	<script type="text/javascript" src="./script.js"></script>
+
+</body>
+
+</html>
